@@ -1,5 +1,5 @@
 {
-  "name": "webpack-test",
+  "name": "webpack-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LC-daoxin/webpack#readme",
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
