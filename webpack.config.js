@@ -1,13 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
+    mode: 'development',
+    devtool: 'source-map',
     entry: './src/index.js',
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, 'dist')
     },
-    mode: 'development',
     module: {
         rules:[
             {
@@ -39,10 +40,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html'
-        })
+        }),
+        new CleanWebpackPlugin()
     ]
 }
