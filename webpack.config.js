@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
+
 module.exports = {
     mode: 'development',
     devtool: 'cheap-module-eval-source-map',
@@ -44,7 +46,8 @@ module.exports = {
             filename: 'index.html',
             template: 'index.html'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
         inline: true,
@@ -52,6 +55,7 @@ module.exports = {
         host: '0.0.0.0',
         port: 8080,
         compress: true,
-        hot: true
+        hot: true,
+        hotOnly: true
     }
 };
