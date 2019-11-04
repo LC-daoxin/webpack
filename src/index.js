@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 import image from './img.png'
 import './index.scss'
 var root = document.getElementById('root');
