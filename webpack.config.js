@@ -5,6 +5,9 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
+    /* optimization: {
+        usedExports: true // tree shaking development
+    }, */
     devtool: 'cheap-module-eval-source-map',
     entry: './src/index.js',
     output: {
