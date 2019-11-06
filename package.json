@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "watch": "webpack --watch",
-    "dev": "webpack-dev-server --progress",
+    "dev": "webpack-dev-server --progress --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js",
     "start": "npm run dev"
   },
   "repository": {
@@ -35,7 +36,8 @@
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",

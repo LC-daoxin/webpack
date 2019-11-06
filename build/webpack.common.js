@@ -1,15 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const webpack = require('webpack');
-
 module.exports = {
-    mode: 'development',
-    /* optimization: {
-        usedExports: true // tree shaking development
-    }, */
-    devtool: 'cheap-module-eval-source-map',
-    entry: './src/index.js',
+    entry: {
+        main: './src/index.js'
+    },
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, 'dist')
@@ -74,16 +69,6 @@ module.exports = {
             filename: 'index.html',
             template: 'index.html'
         }),
-        new CleanWebpackPlugin(),
-        new webpack.HotModuleReplacementPlugin()
-    ],
-    devServer: {
-        inline: true,
-        open: true,
-        host: '0.0.0.0',
-        port: 8080,
-        compress: true,
-        hot: true,
-        hotOnly: true
-    }
-};
+        new CleanWebpackPlugin()
+    ]
+}
