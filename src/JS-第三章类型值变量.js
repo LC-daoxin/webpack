@@ -1,3 +1,4 @@
+/*2019-11-7*/
 let s = 'Hello worlld';
 let a = s.split(/l\w/);
 
