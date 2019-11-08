@@ -5,15 +5,17 @@ import "@babel/polyfill";
 import './index.scss'
 var root = document.getElementById('root');
 
-//import show from './JS-第三章类型值变量'
+// import show from './JS-Variable'
 /* console.log(show.s + '\n用split分割\n');
 console.table(show.a);
 console.log(show.a1);
 console.log(show.searchIndex); */
 
-import inherit from './JS-object'
+// import inherit from './JS-object'
 
+// import Array from './JS-Array'
 
+import Arg from './JS-Function'
 
 /*
     var img = new Image();
