@@ -15,7 +15,9 @@ console.log(show.searchIndex); */
 
 // import Array from './JS-Array'
 
-import Arg from './JS-Function'
+//import Arg from './JS-Function'
+
+import Mod from './JS-Module'
 
 /*
     var img = new Image();

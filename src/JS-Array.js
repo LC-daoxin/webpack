@@ -34,3 +34,13 @@ let Fs = F.some(function (x) {
 });
 console.log(Fs);
 
+let G = [12, 43, 65, 109, 110, 102, 22, 7, 304];
+function hide(o) {
+    var props = (arguments.length == 1)
+    ? Object.getOwnPropertyNames(o)
+        : Array.prototype.splice.call(arguments, 1);
+    console.log(props)
+}
+// let Gs = G.splice(1);
+hide(G,1);
+

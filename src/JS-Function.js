@@ -93,3 +93,4 @@ var f1 = function (x, y, z) {
 Left(f1, 2)(3, 4);
 
 console.log(Left.prototype.constructor);
+
