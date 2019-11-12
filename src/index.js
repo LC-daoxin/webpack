@@ -19,7 +19,9 @@ console.log(show.searchIndex); */
 
 //import Mod from './JS-Module'
 
-import web from './JS-web'
+// import web from './JS-web'
+
+import win from './JS-Window'
 
 /*
     var img = new Image();
